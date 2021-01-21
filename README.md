@@ -9,7 +9,8 @@ Guide for using and flashing the ATSAMD21G18 MCU.
 
 ## Steps
 ### 1. Building Software
-In atmel studio build the given software. We are will work with a `.elf` file in the following.
+> *Note:* Be careful when selecting the projec properties, the selected MCU *have to match* with the one you have.
+In atmel studio build the given software. We are will work with the `.elf` file in the following.
 
 ### 2. Installing Dependecies
 Install drivers for ST Link V2 and install OpenOCD
@@ -25,4 +26,5 @@ Modify the `Application.elf` to your binary with relative path.
 ## Sources
 * [OpenOCD](http://openocd.org/doc-release/pdf/openocd.pdf)
 * [ATSAMD21G18A](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf)
+* [Atmel Studio](https://www.microchip.com/en-us/development-tools-tools-and-software/microchip-studio-for-avr-and-sam-devices)
 * Arduino Zero bootloader [source](https://github.com/arduino/ArduinoCore-samd/tree/master/bootloaders/zero)
