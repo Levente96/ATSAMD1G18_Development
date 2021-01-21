@@ -16,7 +16,7 @@ Install drivers for ST Link V2 and install OpenOCD
 
 ### 3. Flash Software
 You can flash a given `.elf` file with the following command:
-`openocd.exe -f interface/stlink-v2.cfg -c "set CHIPNAME at91samd21g18; set ENDIAN little; set CPUTAPID 0x0bc11477; source [find target/at91samdXX.cfg]" -c "init" -c "reset init" -c "program Application.elf verify reset exit" `
+```openocd.exe -f interface/stlink-v2.cfg -c "set CHIPNAME at91samd21g18; set ENDIAN little; set CPUTAPID 0x0bc11477; source [find target/at91samdXX.cfg]" -c "init" -c "reset init" -c "program Application.elf verify reset exit" ```
 Modify the `Application.elf` to your binary with relative path.
 
 ---
